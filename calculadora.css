@@ -1,0 +1,8 @@
+.id{
+    color:white;
+    background-image:url("fondo.jpeg");
+}
+.id:hover{
+    color:white;
+    background-color:#b3ecff;
+}
