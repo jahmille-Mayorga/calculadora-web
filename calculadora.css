@@ -1,8 +1,54 @@
-.id{
+body{
+
+    background-image:url("fondo.jpg");
+    justify-content:center;
+    float:none;
+}
+.cuerpo{
+    background-color:gray;
+    width: 320px;
+    padding: 10px;
+    margin: 0;
+    border-radius:15 px;
+}
+.casio{
+    color:black;
+    font-family:"Georgia";
+    font-weight:bolder;
+    float:left;
+}
+.fx{
+    color:black;
+    font-family: 'Italianno', cursive;
+    font-weight:bolder;
+    float:right;
+}
+.natural{
+    font-family:"";
+    color:#00ffcc;
+    font-weight:bold;
+    float:right;
+}
+.pantalla{
+    font-family: 'DotGothic16', sans-serif;
+    background-color:#339933;
+    color:#000066;
+    padding:20 px 20 px;
+    border-radius:10px;
+    font-weight:bold;
+    align-content:center;
+
+
+
+}
+.button{
     color:white;
     background-image:url("fondo.jpeg");
+    /*In the case that I will use CSS buttons(different from html buttons that are those what were
+    chosen at the beginning) I must use the box-shadow: xpx ypx; property*/
+
 }
-.id:hover{
+.button:hover{
     color:white;
     background-color:#b3ecff;
 }
