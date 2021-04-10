@@ -11,24 +11,29 @@
      rel="stylesheet">
 
 
-    <script type="text/javascript" src="calculadora.js"></script>
+    
     <title>Calculadora Jahmille Mayorga</title>
 </head>
+<header>
+
+</header>
 <body>
-    <div class=cuerpo>
-        <div class=casio>CASIO</div> <div class=fx> fx-570ES PLUS</div> </br><div class=natural>natural U.P.A.M</div> </br>
-        <div class="pantalla">0</div>
+    <div id=cuerpo>
+        <div id=casio>CASIO</div> <div id=fx> fx-570ES PLUS</div> </br><div id=natural>natural U.P.A.M</div> </br>
+        <div id="displayer">|</div>
         </br>
-        <button id="button" id="number">7</button> <button id="button" id="number">8</button> <button id="button" id="number">9</button> <button id="button">x</button>
+        <input type="button" class="number" value="7"onclick="display(this.id,'displayer')"/> <input type="button" class="number" value="8" onclick="display(this.id,'displayer')"/> <input type="button" class="number" value="9" onclick="display(this.id,'displayer')"/> <input type="button" class="operation"value="x"onclick="display(this.id,'displayer')"/> 
         </br>
-        <button id="button" id="number">4</button> <button id="button" id="number">5</button> <button id="button" id="number">6</button> <button id="button">-</button>
+        <input type="button" class="number" value="6" onclick="display(this.id,'displayer')"/><input type="button" class="number" value="5" onclick="display(this.id,'displayer')"/> <input type="button" class="number" value="6" onclick="display(this.id,'displayer')"/> <input type="button" class="operation" value="-"onclick="display(this.id,'displayer')"/>
         </br>
-        <button id="button" id="number">1</button> <button id="button" id="number">2</button> <button id="button" id="number">3</button> <button id="button">+</button>
+        <input type="button" class="number" value="1" onclick="display(this.id,'displayer')"/> <input type="button" class="number" value="2" onclick="display(this.id,'displayer')"/> <input type="button" class="number" value="3" onclick="display(this.id,'displayer')"/><input type="button" class="operation" value="+"onclick="display(this.id,'displayer')"/>
         </br>
-        <button id="button" id="number">0</button> <button id="button">clr</button> <button id="button">/</button> <button id="button">=</button>
+        <input type="button" class="number" value="0" onclick="display(this.id,'displayer')"/> <input type="button" value="clr" onclick="clear('displayer')"/> <input type="button" class="operation" value="/" onclick="display(this.id,'displayer')"/> <input type="button" value="=" onclick="equal(this.id,'displayer')"/>
         </br>
+        <input type="button" class="operation" value="DEL" onclick="del('displayer')"/>
     </div>
 </body>
+<script type="text/javascript" src="calculadora.js"></script>
 </html>
 
 <!-- I can try to use fontawesome's icons as buttons for my calc

@@ -1,35 +1,45 @@
+*{
+    box-sizing:border-box;
+    
+}
+header{
+    margin:0;
+    padding:5%;
+}
 body{
 
-    width:100%;
+    margin:0;
     background-image:url("http://cdn.backgroundhost.com/backgrounds/subtlepatterns/green_dust_scratch.png");
-    float:none;
+    /*Oficial site of the used background image:http://backgroundhost.com/*/
 }
-.cuerpo{
+#cuerpo{
     background-color:gray;
-    width:200px;
+    margin-top:5%;
+    margin-right:33%;
+    margin-left:33%;
+    width:30%;
     padding: 10px;
-    margin: 0;
     border-radius:15px;
 }
-.casio{
+#casio{
     color:black;
     font-family:"Georgia";
     font-weight:bolder;
     float:left;
 }
-.fx{
+#fx{
     color:black;
     font-family: 'Italianno', cursive;
     font-weight:bolder;
     float:right;
 }
-.natural{
+#natural{
     font-family:"";
     color:#00ffcc;
     font-weight:bold;
     float:right;
 }
-.pantalla{
+#displayer{
     font-family: 'DotGothic16', sans-serif;
     background-color:#339933;
     color:#000066;
@@ -37,18 +47,29 @@ body{
     border-radius:10px;
     font-weight:bold;
     align-content:center;
-
-
-
 }
-.button{
-    color:white;
-    background-image:url("fondo.jpeg");
+.number{
+    background-color:white;
+    color:black;
+    margin:2px;
+    padding:10 px 10px;
+    border-radius:5px;
+    box-shadow:2px gray;
     /*In the case that I will use CSS buttons(different from html buttons that are those what were
     chosen at the beginning) I must use the box-shadow: xpx ypx; property*/
 
 }
-.button:hover{
+.number:hover{
+    background-color:#ccc;
+    border:#ccc;
+}
+.operation{
     color:white;
-    background-color:#b3ecff;
+    background-color:black;
+    padding:10 px 10px;
+    border-radius:5px;
+    box-shadow:2px;
+}
+.opertation:hover{
+    color:#ccc;
 }
