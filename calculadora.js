@@ -29,32 +29,34 @@ function del(){
 
 function equalFor2(){
     var displayer=document.getElementById('displayer').innerHTML;
+    
     if(displayer.split("/")!=displayer){
-        var array=display.split("/");
+        var array=displayer.split("/");
         a=parseInt(array[0]);
         b=parseInt(array[1]);
-        document.getElementById('displayer').innerHTML=div(a,b);
+        displayer.innerHTML=div(a,b);
     }
     else if(displayer.split("*")!=displayer){
-        var array=display.split("*");
+        var array=displayer.split("*");
         a=parseInt(array[0]);
         b=parseInt(array[1]);
-        document.getElementById('displayer').innerHTML=mul(a,b);
+        displayer.innerHTML=mul(a,b);
     }
     else if(displayer.split("+")!=displayer){
-        var array=display.split("+");
+        var array=displayer.split("+");
         a=parseInt(array[0]);
         b=parseInt(array[1]);
-        document.getElementById('displayer').innerHTML=addition(a,b);
+        displayer.innerHTML=addition(a,b);
     }
     else if(displayer.split("-")!=displayer){
-        var array=display.split("-");
+        var array=displayer.split("-");
         a=parseInt(array[0]);
         b=parseInt(array[1]);
-        document.getElementById('displayer').innerHTML=substraction(a,b);
+        displayer.innerHTML=substraction(a,b);
     }
     else{
         return;
+
     }
     
 }
@@ -62,3 +64,6 @@ function addition(a,b){document.getElementById('displayer').innerHTML=a+b;}
 function substraction(a,b){document.getElementById('displayer').innerHTML=a-b;}
 function mult(a,b){document.getElementById('displayer').innerHTML=a*b;}
 function div(a,b){document.getElementById('displayer').innerHTML=a/b;}
+function operationError(){
+    display
+}
