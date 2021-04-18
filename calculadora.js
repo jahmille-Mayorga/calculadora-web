@@ -40,7 +40,7 @@ function equalFor2(){
         var array=displayer.split("*");
         a=parseInt(array[0]);
         b=parseInt(array[1]);
-        displayer.innerHTML=mul(a,b);
+        displayer.innerHTML=mult(a,b);
     }
     else if(displayer.split("+")!=displayer){
         var array=displayer.split("+");
